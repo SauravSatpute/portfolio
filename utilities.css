@@ -1,0 +1,23 @@
+.flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: space-between;
+}
+
+.flex1 {
+	/*width: 500px;*/
+	 justify-content: center;
+	 margin: 2rem;
+}
+.flex2 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+

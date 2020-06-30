@@ -1,0 +1,391 @@
+@import 'utilities.css';
+
+:root{
+	--primary:/*#3DCFD3*/#f05d0e;
+	--dark:#161616;
+	--pure:#ffffff;
+	--ternary:#898989;
+	--light:#F2F2F2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing:antialiased;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: poppins,sans-serif;
+}
+header {
+	background-color: var(--dark);
+	background-image: url(1.jpg);
+	background-size: cover;
+}
+
+.container {
+	max-width: 1152px;
+	padding: 0px 15px;
+	margin:0px auto;
+	padding-bottom: 20rem;
+}
+
+header nav .left a {
+	color: white;
+	text-decoration: none;
+	margin-left: 3rem;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+header nav .left a:hover{
+	color: var(--primary);
+}
+
+header nav {
+	padding: 2rem 0;
+}
+
+header nav .logo {
+	margin-right: 3rem;
+}
+
+.btn {
+	padding: 0.8rem 3rem;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	border:2px solid transparent;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn-primary {
+	background: var(--primary);
+}
+
+.btn-primary:hover {
+	background: transparent;
+	border-color: var(--primary);
+	color: var(--primary);
+}
+
+.Hero .left {
+	color: var(--pure);
+}
+
+.Hero .left h5{
+	font-size: 1.6rem;
+	color: var(--primary);
+}
+
+.Hero .left h1{
+	font-size: 4rem;
+	font-weight: 100;
+	margin-bottom: 2rem;
+}
+
+.Hero .left p {
+	line-height: 1.6rem;
+	margin-bottom: 2rem;
+	max-width: 500px;
+}
+
+.btn-secondary {
+	background: transparent;
+	border-color: var(--primary);
+	color: var(--primary);
+}
+
+.btn-secondary:hover {
+	background: var(--primary);
+	color: var(--pure);
+}
+
+section.about {
+	padding: 6rem 2rem ;
+	/*background-image: url(bridge.jpg);*/
+	background-color: var(--dark);
+}
+section.about .container {
+	padding-bottom: 3rem;
+	background-image:url(bgperfect.jpg);
+	background-size: cover;
+	padding: 3rem;
+	border-radius: 3rem;
+	margin-bottom: 3rem;
+	transition: all 0.5s ease;
+}
+
+section.about .container:hover {
+	
+/*var(--dark)*/;
+	transform: scale(1.1);
+}
+
+
+section.about  h1{
+	margin-bottom: 1rem;
+	font-weight: 400;
+	color: var(--dark);
+	font-size: 1.5rem;
+}
+
+
+
+section.about h3{
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	font-weight: 400;
+	color: var(--pure);
+}
+
+section.about p {
+	color: var(--dark);
+	margin-bottom: 1rem;
+}
+
+section.about .about-image {
+	margin-left: 1rem;
+	width:20rem;
+	height:20rem;
+	margin-right: 2rem; 
+}
+
+section.about .social img{
+	width: 30px;
+	height: 30px;
+	background-color: var(--dark);
+	margin: 0.5rem;
+
+}
+
+.project-heading {
+	text-align: center;
+	color: var(--dark);/*var(--ternary)*/;
+	margin-bottom: 2rem;
+	line-height: 0.5rem;
+	padding-top: 5rem;
+	font-size: 2rem; 
+}
+
+.project-heading + p {
+	color: white/*var(--ternary)*/;
+	margin-bottom: 8rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+section.projects  {
+	
+/*	background:;*/
+	background-color: var(--dark);
+	background-image:linear-gradient(to top, rgba(0, 0, 0,1.0), rgba(255, 149, 0,0.8)), url(bg4.jpg);
+	background-size: cover;
+}
+
+section.projects .container {
+	padding-bottom: 3rem;
+	
+	
+}
+
+section.projects .wrapper {
+	display: grid;
+	/*grid-template-columns: repeat(3 , 1fr);*/
+	grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+	grid-column-gap: 2rem;
+	grid-row-gap: 7rem;
+}
+
+section.projects .wrapper .card {
+	background: var(--pure);
+	padding: 3rem 1rem;
+	position: relative;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+section.projects .wrapper .card img{
+	top:-5rem;
+	padding: -3rem;
+	background:var(--dark);
+	width: 150px;
+	height: 150px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	/*width: 150px;
+	height: 150px;*/
+	/*background: var(--pure);*/
+	padding: 2rem 2rem;
+	position: absolute;
+}
+
+section.projects .wrapper .card h2 {
+	padding-top: 5rem;
+	font-weight: 400;
+	font-size: 1.2rem;
+	margin-bottom: 0.7rem;
+}
+
+section.projects .wrapper .card p {
+	color: var(--dark);
+	line-height: 1.5rem;
+	font-size: 0.9rem;
+}
+
+section.projects .wrapper .card:hover {
+	background: var(--primary)/*var(--dark)*/;
+	transform: scale(1.1);
+}
+
+section.projects .wrapper .card:hover h2{
+	color: var(--pure);
+}
+
+section.projects .wrapper .card:hover p{
+	color: var(--pure);
+}
+
+section.blog {
+	/*background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 149, 0, 0.8)),url(bridge.jpg);*/
+	 background: url(bridge.jpg) no-repeat center center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-color: var(--dark);
+	
+}
+
+section.blog .container {
+	padding-bottom: 10rem;
+}
+
+section.blog .wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+	grid-gap: 2rem;
+}
+
+section.blog .wrapper .card {
+	/*background:var(--pure);*/
+	background:var(--primary); 
+}
+
+section.blog .wrapper .card:hover {
+	background: linear-gradient(to bottom, rgba(0, 0, 0,0.8), rgba(240, 93, 14,0.8));
+}
+
+
+section.blog .wrapper .card img{
+	justify-content: center;
+	width: 100%;
+
+}
+
+section.blog .wrapper .card-content {
+	padding: 3rem;
+}
+
+section.blog .wrapper .card-content h1 {
+	font-size: 	1.5rem;
+	color: var(--dark);
+	font-weight: 500;
+}
+
+section.blog .wrapper .card-content a {
+	text-decoration: none;
+}
+
+
+section.blog .wrapper .card-content p {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+section.blog .wrapper .card-content span {
+	color: var(--ternary);
+	font-size: 0.8rem;
+}
+
+.blog-heading {
+	text-align: center;
+	color: var(--dark);/*var(--ternary)*/;
+	margin-bottom: 2rem;
+	line-height: 0.5rem;
+	padding-top: 5rem;
+	font-size: 2rem; 
+}
+
+.blog-heading + p {
+	color: white/*var(--ternary)*/;
+	margin-bottom: 8rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+footer .footer-social img{
+	width: 25px;
+	height: 25px;
+}
+
+footer img {
+	width: 65px;
+	height: 65px;
+}
+
+footer .container {
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+footer {
+	background: var(--dark);
+}
+
+footer .licence {
+	color: var(--primary);
+}
+
+@media only screen and (max-width: 1024px){
+	section.about .container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	section.about .container {
+		justify-content: center;
+	}
+	section.about .about-image {
+		width:350px;
+	 	height:300px;
+	}
+	section.projects .wrapper{
+	grid-template-columns: repeat(1 , 1fr)
+}
+/*	section.about  h1{
+	margin-bottom: 1rem;
+	font-weight: 400;
+
+	font-size: 1.5rem;
+}*/
+}
+
+
+
+	
+	
+	
+	
+
+/*	
+
+}
